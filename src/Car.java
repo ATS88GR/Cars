@@ -1,12 +1,14 @@
-public class Car {
+import java.io.Serializable;
+
+public class Car implements Serializable {
     int year;
-    String marka;
+    String brand;
     String model;
     int cost;
 
-    public Car(int year, String marka, String model, int cost) {
+    public Car(int year, String brand, String model, int cost) {
         this.year = year;
-        this.marka = marka;
+        this.brand = brand;
         this.model = model;
         this.cost = cost;
     }
@@ -19,12 +21,12 @@ public class Car {
         this.year = year;
     }
 
-    public String getMarka() {
-        return marka;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setMarka(String marka) {
-        this.marka = marka;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public String getModel() {
